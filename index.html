@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Uso de Formularios
+            </h1>
+        </div>
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index 2.html">Sobre Mi</a></li>
+                    <li><a href="productos.html">Hobbies</a></li>
+                    <li><a href="sobre nosotros.html">Codo a Codo</a></li>
+                    <li><a href="contacto.html">Expectativas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="form">
+            <h2>Formulario de consulta</h2>
+            <form action="base_datos.php" method="post">
+                <input type="text" id="nombre" placeholder="Nombre" minlength="5"><br>
+                <input type="text" id="apellido" placeholder="Apellido" maxlength="15"><br>
+                <input type="number" placeholder="Edad" min="0" max="100"><br>
+                <input type="email" id="mail" placeholder="Mail"><br>
+                <textarea name="" id="" cols="18" rows="2" placeholder="Escribí tu consulta"></textarea><br>
+                <h3>Colores</h3>
+                <input type="color">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        
+
+        <h3>Select</h3>
+        <select name="" id="pais">
+            <option value="">--seleccionar--</option>
+            <option value="">Argentina</option>
+            <option value="">Brasil</option>
+            <option value="">Bolivia</option>
+            <option value="">Uruguay</option>
+            <option value="">Paraguay</option>
+        </select>
+        <!--Siempre llenar el value correspondiente para recolectar información.-->
+    
+    
+    </main>
+    <footer>
+        <div id="pie">
+            <br>
+            <hr>
+            <p style="text-align: center;">&copy;2024 Santiago Loto</p>
+        </div>
+    </footer>
+</body>
+</html>
