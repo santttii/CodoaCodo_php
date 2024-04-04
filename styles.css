@@ -1,0 +1,15 @@
+*{
+    margin-left: auto;
+    margin-right: auto
+    ;
+}
+
+header{
+    background-color: brown;
+    padding: 3% 0;
+}
+
+#navbar li{
+    display: inline;
+    padding: 0 9%;
+}
