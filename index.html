@@ -1,64 +1,757 @@
+
 <!DOCTYPE html>
-<html lang="es-ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    <header>
-        <div id="logo">
-            <h1>Uso de Formularios
-            </h1>
-        </div>
-        <div id="navbar">
-            <nav>
-                <ul>
-                    <li><a href="index 2.html">Sobre Mi</a></li>
-                    <li><a href="productos.html">Hobbies</a></li>
-                    <li><a href="sobre nosotros.html">Codo a Codo</a></li>
-                    <li><a href="contacto.html">Expectativas</a></li>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <link rel="shortcut icon" href="img/ico.png" type="image/x-icon"/>
+
+        <title>Cine AR</title>
+    </head>
+    <body>
+        <header>
+            <nav class="header_nav_links">
+
+                <a href="index.html" class="header_logo">
+                <i class="fas fa-film"></i>
+                <span>Cine AR</span>
+                </a>
+
+                <ul class="header_list_links">
+                <li class="header_items">
+                    <a href="#trends" class="header_link">Tendencias</a>
+                </li>
+                <li class="header_items">
+                    <a href="#acclaimeds" class="header_link">Aclamadas</a>
+                </li>
+                <li class="header_items">
+                    <a href="./logon.html" class="header_link">Registrarse</a>
+                </li>
+                <li class="header_items">
+                    <a href="./login.html" class="header_link-login">Iniciar Sesión</a>
+                </li>
                 </ul>
             </nav>
-        </div>
-    </header>
-    <main>
-        <div id="form">
-            <h2>Formulario de consulta</h2>
-            <form action="base_datos.php" method="post">
-                <input type="text" id="nombre" placeholder="Nombre" minlength="5"><br>
-                <input type="text" id="apellido" placeholder="Apellido" maxlength="15"><br>
-                <input type="number" placeholder="Edad" min="0" max="100"><br>
-                <input type="email" id="mail" placeholder="Mail"><br>
-                <textarea name="" id="" cols="18" rows="2" placeholder="Escribí tu consulta"></textarea><br>
-                <h3>Colores</h3>
-                <input type="color">
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        
-        
+        </header>
+        <main class="main_container">
+            <section class="main_register animate__animated animate__bounceIn">
+                <h1 class="main_register-title">
+                Películas y series ilimitadas
+                <br />
+                en un solo lugar
+                </h1>
+                <h2 class="main_register-subTitle no-margin">
+                Disfruta donde quieras.
+                </h2>
+                <h2 class="main_register-subTitle">Cancela en cualquier momento.</h2>
+                <a href="./registro.html" class="main_register_btn">Registrate</a>
+            </section>
 
-        <h3>Select</h3>
-        <select name="" id="pais">
-            <option value="">--seleccionar--</option>
-            <option value="">Argentina</option>
-            <option value="">Brasil</option>
-            <option value="">Bolivia</option>
-            <option value="">Uruguay</option>
-            <option value="">Paraguay</option>
-        </select>
-        <!--Siempre llenar el value correspondiente para recolectar información.-->
-        <p>Cambio realizado para subir a repo</p>
-    
-    </main>
-    <footer>
-        <div id="pie">
-            <br>
-            <hr>
-            <p style="text-align: center;">&copy;2024 Santiago Loto</p>
-        </div>
-    </footer>
-</body>
+            <section class="main_search_container">
+                <h2 class="main_search_title">¿Qué estas buscando para ver?</h2>
+                <form class="main_search_form">
+                <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="Buscar..."
+                    class="main_search_input"
+                />
+                <input type="submit" value="Buscar" class="main_search_btn" />
+                </form>
+            </section>
+
+            <hr class="line_divisor" />
+
+            <section class="main_trends" id="trends">
+                <h3>Las tendencias de hoy</h3>
+                <section class="trends_container">
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/arg.jpg"
+                            alt="Argentina"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="Argentina 1985">
+                            Argentina 1985
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/arg.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/avatar.jpg"
+                            alt="Avatar"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="Avatar">
+                            Avatar
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/avatar.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/avenger.jpg"
+                            alt="The Marvels"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="Advengers">
+                            Advengers End Game
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/avenger.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/barbie.jpg"
+                            alt="Barbie"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="Wonka">Barbie</h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/barbie.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/chucky.jpg"
+                            alt="Chucky"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4
+                            class="trend_title-hover"
+                            title="Chucky"
+                            >
+                            Cult of Chucky
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/chucky.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/damsel.jpg"
+                            alt="damsel"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="Migration">Damsel</h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/damsel.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/godfather.png"
+                            alt="godfather"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="60 minutes">The GodFather</h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/godfather.png"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/dune.jpg"
+                            alt="Dune"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="Wish">Dune</h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/dune.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/joker.jpg"
+                            alt="Joker"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="Joker">
+                            Joker
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/joker.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/killersmoon.jpg"
+                            alt="killersmoon"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="Killersmoon">
+                            Killers of the Flower Moon
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/killersmoon.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/monkey.jpg"
+                            alt="monkey"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="monkey">
+                            Monkey Man
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/monkey.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/much.webp"
+                            alt="much"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="much">
+                            Muchachos
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/much.webp"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/napo.jpg"
+                            alt="napo"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="napo">
+                            Napoleon
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/napo.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/norespires.jpg"
+                            alt="nores"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title=nores">
+                            No Respires
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/norespires.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/oppen.webp"
+                            alt="oppen"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="oppen">
+                            Oppenheimer
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/oppen.webp"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/rapido7.jpg"
+                            alt="rapido7"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="rapido7">
+                            Rapidos y Furiosos 7
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/rapido7.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/rambo.jpg"
+                            alt="rambo"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="rambo">
+                            Rambo Last Blood
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/rambo.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/starwars.webp"
+                            alt="starwars"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="starwars">
+                            Star Wars The Force Awakens
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/starwars.webp"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/panda.jpg"
+                            alt="panda"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title=panda">
+                            Kung Fu Panda
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/panda.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/profecia.jpg"
+                            alt="profecia"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="profecia">
+                            Profecía
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/profecia.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/puertaroja.webp"
+                            alt="puertaroja"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="puertaroja">
+                            La Noche del Demonio: Puerta Roja
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/puertaroja.webp"
+                            alt="up"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/toystory.jpg"
+                            alt="toystory"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="toystory">
+                            Toy Story
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/toystory.jpg"
+                            alt="toystory"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/pajaros.jpg"
+                            alt="pajaros"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="pajaros">
+                            Pájaros
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/pajaros.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/babylon.jpg"
+                            alt="babylon"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="babylon">
+                            Babylon
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/babylon.jpg"
+                            alt="icono pelicula"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="trend_container">
+                        <a href="#" class="trend_container_link">
+                        <img
+                            src="img/wonka.jpg"
+                            alt="wonka"
+                            class="trend_image"
+                        />
+                        <div class="trend_container-hover">
+                            <h4 class="trend_title-hover" title="wonka">
+                            Wonka
+                            </h4>
+                            <p class="trend_review-hover">Mirar</p>
+                            <img
+                            src="img/wonka.jpg"
+                            alt="toystory"
+                            class="trend_image-hover"
+                            />
+                        </div>
+                        </a>
+                    </div>
+                </section>
+
+                <button class="main_trends_btn">Anterior</button>
+                <button class="main_trends_btn">Siguiente</button>
+            </section>
+
+            <hr class="line_divisor" />
+
+            <section class="main_acclaimed" id="acclaimeds">
+                <h3>Las más aclamadas</h3>
+                <section class="acclaimeds_container">
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/killersmoon.jpg"
+                        alt="aclamada 1"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/godfather.png"
+                        alt="aclamada 2"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/avatar.jpg"
+                        alt="aclamada 3"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/puertaroja.webp"
+                        alt="aclamada 4"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/oppen.webp"
+                        alt="aclamada 5"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/babylon.jpg"
+                        alt="aclamada 6"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/rambo.jpg"
+                        alt="aclamada 7"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/wonka.jpg"
+                        alt="aclamada 8"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/barbie.jpg"
+                        alt="aclamada 9"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/dune.jpg"
+                        alt="aclamada 10"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/damsel.jpg"
+                        alt="aclamada 11"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+
+                <div class="acclaimed_container">
+                    <a href="#">
+                    <img
+                        src="img/napo.jpg"
+                        alt="aclamada 12"
+                        class="acclaimed_image"
+                    />
+                    </a>
+                </div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <nav class="footer_links">
+                <ul class="footer_list_links">
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">Términos y condiciones</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">Preguntas frecuentes</a>
+                    </li>
+                    <li class="footer_item"><a href="#" class="footer_link">Ayuda</a></li>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link-active">Administrador Peliculas</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="btn_top">
+                <img src="img/up.png" alt="Ir arriba flecha" class="btn_top_image"/>
+            </a>
+        </footer>
+    </body>
 </html>
