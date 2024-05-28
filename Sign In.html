@@ -11,6 +11,7 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
         />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -43,7 +44,6 @@
                     placeholder="Email"
                     class="form_input"
                     id="mail"
-                    
                 />
                 <input
                     type="password"
@@ -51,9 +51,8 @@
                     placeholder="Contraseña"
                     class="form_input"
                     id="pass"
-                    
                 />
-                <input type="submit" value="Iniciar Sesión" class="form_btn" onclick="validarCampos()" />
+                <button type="button" class="form_btn" onclick="validarCampos()">Iniciar Sesión </button>
                 <a href="Sign Up.html" class="form_link">No tienes una cuenta?</a>
                 </form>
             </section>

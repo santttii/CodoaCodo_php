@@ -481,5 +481,35 @@ input[type="date"]{
     background-color: #9f3647;
     color:white;
     border: none;
+    align-items: center;
     transition: background-color ease-in-out 500ms;
+}
+
+#bodi{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: 120px;
+}
+.character {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.character img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.search-container {
+    margin-top: 20px;
+}
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+}
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }
