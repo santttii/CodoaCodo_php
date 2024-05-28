@@ -22,7 +22,7 @@
 
         <title>Cine AR</title>
     </head>
-    <body class="bodi">
+    <body>
         <header>
             <nav class="header_nav_links">
 
@@ -48,15 +48,17 @@
             </nav>
         </header>
         <main class="main_container">
-            <h1>Personajes de Star Wars</h1>
-            <div class="search-container">
-                <input type="number" id="character-id" placeholder="Ingresar ID (1-83)">
-                <button onclick="getCharacterData()">Buscar</button>
-            </div>
-            <div class="character">
-                <img id="character-img" src="" alt="Character Image">
-                <h2 id="character-name"></h2>
-                <p id="character-details"></p>
+            <div class="bodi">
+                <h1>Personajes de Star Wars</h1>
+                <div class="search-container">
+                    <input type="number" id="character-id" placeholder="Ingresar ID (1-83)">
+                    <button onclick="getCharacterData()">Buscar</button>
+                </div>
+                <div class="character">
+                    <img id="character-img" src="" alt="Character Image">
+                    <h2 id="character-name"></h2>
+                    <p id="character-details"></p>
+                </div>
             </div>
         </main>
         <footer>
